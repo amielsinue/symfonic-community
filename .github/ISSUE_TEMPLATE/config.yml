@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/amielsinue/symfonic-community/discussions/categories/q-a
+    about: How-to questions and "is this a bug?" go to Discussions first.
+  - name: Share an idea
+    url: https://github.com/amielsinue/symfonic-community/discussions/categories/ideas
+    about: Open-ended ideas and proposals that are not yet a concrete request.
+  - name: Documentation
+    url: https://core.symfonic.dev
+    about: Guides, concepts and the API reference.

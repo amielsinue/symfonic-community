@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose a concrete change to symfonic-core.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What would you like symfonic-core to do?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: How do you handle this today, if at all?
+  - type: input
+    id: version
+    attributes:
+      label: symfonic-core version you use

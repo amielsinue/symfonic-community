@@ -1,0 +1,47 @@
+name: Bug report
+description: Something in symfonic-core does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remove API keys, credentials and personal data before posting.
+  - type: input
+    id: version
+    attributes:
+      label: symfonic-core version
+      description: Output of `python -c "import importlib.metadata as m; print(m.version('symfonic-core'))"`
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Model provider and storage backend
+      placeholder: e.g. Anthropic, PostgreSQL 16 with pgvector
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: The smallest code that shows the problem.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Include the full traceback if there is one.
+    validations:
+      required: true
